@@ -8,7 +8,7 @@ const [students, setStudents] = useState([]);
 
 useEffect(() => {
 	axios
-	.get("http://web-back:4000/students/")
+	.get("http://103.235.197.196:5000/students/")
 	.then(({ data }) => {
 		setStudents(data);
 	})

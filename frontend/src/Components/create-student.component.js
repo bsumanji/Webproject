@@ -12,7 +12,7 @@ const [formValues, setFormValues] =
 // onSubmit handler
 const onSubmit = studentObject => {
 	axios.post(
-'http://web-back:4000/students/create-student',
+'http://103.235.197.196:5000/students/create-student',
 	studentObject)
 	.then(res => {
 		if (res.status === 200)

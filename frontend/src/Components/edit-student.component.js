@@ -17,7 +17,7 @@ const [formValues, setFormValues] = useState({
 const onSubmit = (studentObject) => {
 	axios
 	.put(
-		"http://web-back:4000/students/update-student/" +
+		"http://103.235.197.196:5000/students/update-student/" +
 		props.match.params.id,
 		studentObject
 	)
@@ -34,7 +34,7 @@ const onSubmit = (studentObject) => {
 useEffect(() => {
 	axios
 	.get(
-		"http://web-back:4000/students/update-student/"
+		"http://103.235.197.196:5000/students/update-student/"
 		+ props.match.params.id
 	)
 	.then((res) => {
